@@ -1,0 +1,68 @@
+ PImage img;
+ float ran;
+ float xPos;
+float vx;
+ void setup() {
+   size(600,400);
+   img = loadImage("monkeyy.jpg");
+   textSize(50);
+   fill(26,17,9);
+   ran = random(7.0);
+  xPos = width/2;  
+  vx = -3; 
+ }
+  void draw() {
+   image(img,0,0);
+ 
+  String message;
+ 
+  if (ran >= 0 && ran < 1)
+  {
+    message = "Computer Science Bsc Randomizer: Introduction to Algorithms";
+     text(message,xPos,(height/2) + 180);
+      xPos = xPos + vx;
+   
+  }
+ 
+  if (ran >= 1 && ran < 2)
+  {
+    message = "Computer Science Bsc Randomizer: Mathematics for computing";
+     text(message,xPos,(height/2) + 180);
+      xPos = xPos + vx;
+  }
+ 
+  if (ran >= 2 && ran < 3)
+  {
+    message = "Computer Science Bsc Randomizer: Operating Systems";
+     text(message,xPos,(height/2) + 180);
+      xPos = xPos + vx;
+  }
+  if (ran >= 3 && ran < 4)
+  {
+    message = "Computer Science Bsc Randomizer: Systems architecture";
+     text(message,xPos,(height/2) + 180);
+      xPos = xPos + vx;
+  }
+ 
+  if (ran >= 4 && ran < 5)
+  {
+    message = "Computer Science Bsc Randomizer: Programming in Java";
+     text(message,xPos,(height/2) + 180);
+      xPos = xPos + vx;
+  }
+ 
+  if (ran >= 5 && ran < 6)
+  {
+    message = "Computer Science Bsc Randomizer: Databases and Web Development";
+     text(message,xPos,(height/2) + 180);
+      xPos = xPos + vx;
+  }
+  
+  if (ran >= 6 && ran < 7)
+  {
+    message = "Computer Science Bsc Randomizer: You've worked hard. Have a day off!!!";
+     text(message,xPos,(height/2) + 180);
+      xPos = xPos + vx;
+  }
+
+  }
